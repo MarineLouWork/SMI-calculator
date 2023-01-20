@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="SMI calculator" name="Calculate your SMI"/>
+    <meta content="width=device_width, initial-scale=1.0" name="viewport"/>
+    <!-- CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,500;1,300&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+          rel="stylesheet">
+    <title>SMI calculator</title>
+</head>
+<body>
+<header>
+		<span class="logo">
+			<img alt="Logo" class="smi_logo" src="assets/img/logo.png">
+			<h1>SMI Calculator</h1>
+		</span>
+</header>
+<main>
+    <section>
+        <form>
+            <h2>Let's calculate</h2>
+            <div id="form">
+                <h3>Enter your numbers</h3>
+                <label for="weight">Weight (kgs) :</label>
+                <input id="weight" placeholder="..." type="number" required>
+                <label for="size"">Size (cm) :</label>
+                <input id="size" placeholder="..." type="number" required>
+                <h3 id="smiResultTitle"> Your Result is :</h3>
+                <h3 id="smiResultNbr"><span id="smi"></span></h3>
+                <p><span id="smiResultTxt"></span></p>
+            </div>
+            <div id="buttons">
+                <button onclick="calcSmi()" type="button"><p>Let's Go</p></button>
+            </div>
+        </form>
+    </section>
+</main>
+<footer>
+    <a href="https://www.linkedin.com/in/marinelouwork">&copy; Copyright 2023 Marine Lou</a>
+</footer>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
